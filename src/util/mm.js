@@ -2,7 +2,7 @@
 * @Author: Rosen
 * @Date:   2017-05-15 15:26:38
 * @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-01-27 20:02:49
+* @Last Modified time: 2018-05-27 17:07:01
 */
 
 'use strict';
@@ -42,7 +42,7 @@ var _mm = {
     getServerUrl : function(path){
         return conf.serverHost + path;
     },
-    // 获取url参数
+     // 获取url参数
     getUrlParam : function(name){
         var reg     = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
         var result  = window.location.search.substr(1).match(reg);

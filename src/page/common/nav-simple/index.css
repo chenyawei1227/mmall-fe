@@ -2,7 +2,7 @@
 * @Author: chenyawei1227
 * @Date:   2017-08-04 12:46:47
 * @Last Modified by:   chenyawei1227
-* @Last Modified time: 2017-08-04 12:58:12
+* @Last Modified time: 2018-01-28 20:10:35
 */
 .nav-simple{
 	height: 60px;
@@ -14,4 +14,5 @@
 	font-size: 26px;
 	font-weight: bold;
 	color: #c60023;
+	text-decoration: none;
 }

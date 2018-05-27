@@ -1,0 +1,17 @@
+/*
+* @Author: chenyawei1227
+* @Date:   2018-02-16 21:52:24
+* @Last Modified by:   chenyawei1227
+* @Last Modified time: 2018-05-27 16:39:52
+*/
+.form-line{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.form-line .label{
+	/*因为span是没有宽度的，所以加上display:inline-block*/
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}

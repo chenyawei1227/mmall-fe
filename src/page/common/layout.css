@@ -2,7 +2,7 @@
 * @Author: chenyawei1227
 * @Date:   2017-08-03 19:48:39
 * @Last Modified by:   chenyawei1227
-* @Last Modified time: 2017-08-04 11:58:02
+* @Last Modified time: 2018-05-27 16:37:44
 */
 /* css reset 把样式统一起来，防止在不同的浏览器中样式不一样*/
 *{
@@ -30,10 +30,29 @@ input[type='checkbox']{
 /* 定宽布局 */
 .w{
 	width: 1080px;
-	margin: 0 auto;
-	position: relative;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* panel */
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
 	overflow: hidden;
 }
+
 /* 适应大屏幕 
 .large .w{
 	width: 1600px;
