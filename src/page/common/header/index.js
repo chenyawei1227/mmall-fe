@@ -1,8 +1,8 @@
 /*
 * @Author: chenyawei1227
 * @Date:   2017-08-04 17:26:26
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2017-10-31 23:34:27
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 16:48:51
 */
 
 'use strict';
@@ -13,8 +13,8 @@ var _mm = require('util/mm.js');
 var header = {
 	init : function(){
 		this.bindEvent();
-		
 	},
+	
 	onLoad : function(){
 		var keyword = _mm.getUrlParam('keyword');
 		//keyword存在，则回填输入框
@@ -38,7 +38,7 @@ var header = {
 	},
 	//搜索到提交
 	searchSubmit : function(){
-		var keyword = $('#search-input').val();
+		var keyword = $.trim($('#search-input').val());
 		//如果提交的时候有keyword，正常跳转到list页
 		if (keyword) {
 			window.location.href = './list.html?keyword=' + keyword;

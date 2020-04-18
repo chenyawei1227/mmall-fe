@@ -1,8 +1,8 @@
 /*
 * @Author: chenyawei1227
 * @Date:   2017-08-03 19:48:39
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-05-27 16:37:44
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 13:03:09
 */
 /* css reset 把样式统一起来，防止在不同的浏览器中样式不一样*/
 *{
@@ -71,6 +71,7 @@ input[type='checkbox']{
 	cursor: pointer;
 	text-decoration: none;
 }
+/*鼠标放上去变为红色*/
 .link:hover{
 	color: #e80012;
 }

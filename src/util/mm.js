@@ -1,12 +1,12 @@
 /*
 * @Author: Rosen
 * @Date:   2017-05-15 15:26:38
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-05-27 17:07:01
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 12:42:56
 */
 
 'use strict';
-var Hogan = require('hogan');
+var Hogan = require('hogan.js');
 var conf = {
     serverHost : ''
 };
@@ -51,7 +51,7 @@ var _mm = {
     // 渲染html模板
     renderHtml : function(htmlTemplate, data){
         var template    = Hogan.compile(htmlTemplate),
-            result      = template.render(data);
+        result      = template.render(data);
         return result;
     },
     // 成功提示
@@ -66,8 +66,8 @@ var _mm = {
     validate : function(value, type){
         var value = $.trim(value);
         // 非空验证
-        if('require' === type){
-            return !!value;
+        if('require' === type){//必须有值
+            return !!value;//强制转为boolean
         }
         // 手机号验证
         if('phone' === type){
@@ -80,8 +80,9 @@ var _mm = {
     },
     // 统一登录处理
     doLogin : function(){
-        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);//当前路径传回去，编码为了出来特殊字符
     },
+    //统一跳转处理
     goHome : function(){
         window.location.href = './index.html';
     }
