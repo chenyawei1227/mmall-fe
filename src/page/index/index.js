@@ -2,7 +2,7 @@
 * @Author: chenyawei1227
 * @Date:   2017-07-09 20:06:36
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-18 18:00:34
+ * @Last Modified time: 2020-04-18 22:45:26
 */
 'use strict';
 require('page/common/nav/index.js');
@@ -12,7 +12,7 @@ var _mm = require('util/mm.js');
 
 
 navSide.init({
-	name: 'order-list'
+	
 });
 
 

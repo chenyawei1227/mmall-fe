@@ -1,8 +1,8 @@
 /*
 * @Author: chenyawei1227
 * @Date:   2018-02-16 21:52:16
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-05-27 23:28:26
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 22:45:58
 */
 'use strict';
 require('./index.css');
@@ -12,6 +12,7 @@ var navSide = require('page/common/nav-side/index.js');
 var _mm = require('util/mm.js');
 var _user  = require('service/user-service.js');
 var templateIndex = require('./index.string');
+
 navSide.init({
 	name : 'user-center'
 });

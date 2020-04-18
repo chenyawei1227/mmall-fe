@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <%= require('html-loader!./layout/head-common.html')  %>
         <title><%= htmlWebpackPlugin.options.title%> - MMALL</title>
     </head>
@@ -24,6 +25,11 @@
                     <div class="panel-title">个人中心</div>
                     <div class="panel-body">
                         <div class="loading"></div>
+                        <!-- 
+                            js通过hogan渲染html
+                            userHtml = _mm.renderHtml(templateIndex,res);
+                            $('.panel-body').html(userHtml); 
+                        -->
                     </div>
                 </div>
             </div>

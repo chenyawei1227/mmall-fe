@@ -1,8 +1,8 @@
 /*
 * @Author: chenyawei1227
 * @Date:   2018-01-29 22:18:56
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-01-30 21:58:53
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 21:48:59
 */
 'use strict'
 require('./index.css');
@@ -38,7 +38,7 @@ var page = {
 			// 异步验证用户名是否存在
 			_user.checkUsername(username,function(res){
 				formError.hide();
-			}, function(err){
+			}, function(errMsg){
 				formError.show(errMsg);
 			});
 		});
@@ -65,7 +65,8 @@ var page = {
 				question 			: $.trim($('#question').val()),
 				answer 				: $.trim($('#answer').val())
 			},
-			validateResult = this.formValidate(formData);
+		validateResult = this.formValidate(formData);
+		//验证成功
 		if (validateResult.status) {
 			//提交
 			_user.register(formData, function(res){

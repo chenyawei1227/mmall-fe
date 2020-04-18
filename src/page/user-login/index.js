@@ -1,8 +1,8 @@
 /*
 * @Author: chenyawei1227
 * @Date:   2017-07-08 19:55:28
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-01-30 22:57:44
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 21:31:08
 */
 
 'use strict';
@@ -47,12 +47,12 @@ var page = {
 				username : $.trim($('#username').val()),
 				password : $.trim($('#password').val())
 			},
-			validateResult = this.formValidate(formData);
+		//表单验证结果
+		validateResult = this.formValidate(formData);
 		if (validateResult.status) {
 			//提交
 			_user.login(formData, function(res){
 				window.location.href = _mm.getUrlParam('redirect') || './index.html';
-
 			}, function(errMsg){
 				formError.show(errMsg);
 			});
