@@ -2,5 +2,47 @@
 * @Author: chenyawei1227
 * @Date:   2017-07-09 22:08:24
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-18 13:44:04
+ * @Last Modified time: 2020-04-19 13:14:28
 */
+
+/*keywords-list*/
+.keywords-list{
+    float: left;
+    width: 240px;
+    height: 350px;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #fff;
+    color: #fff;
+}
+
+.keywords-list .keywords-item{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 34;
+}
+
+.keywords-list .keywords-item:hover{
+    background: #ccc;
+}
+
+.keywords-list .keywords-item .link{
+    color: #111;
+    margin-right: 6px;
+}
+
+.keywords-list .keywords-item .link:hover{
+    color: #c60023;
+}
+
+/*banner-con 右边的容器*/
+.banner-con{
+    width: 830px;
+    float: left;
+    height: 370px;
+    margin-top: 10px;
+    background: #fff;
+}
+

@@ -1,10 +1,14 @@
 /*
 * @Author: chenyawei1227
 * @Date:   2017-08-04 17:26:17
-* @Last Modified by:   chenyawei1227
-* @Last Modified time: 2018-05-27 14:28:33
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-19 13:02:30
 */
 /* 通用头部导航 */
+.header {
+	background: #fff;
+}
+
 .header .logo{
 	position: absolute;
 	left: 60px;

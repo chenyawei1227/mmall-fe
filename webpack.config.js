@@ -2,7 +2,7 @@
  * @Author: chenyawei 
  * @Date: 2020-04-16 23:26:48 
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-18 23:44:23
+ * @Last Modified time: 2020-04-19 14:33:43
  */
 var webpack           = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");//css单独打包
@@ -43,7 +43,7 @@ var config = {
         'user-center'       : './src/page/user-center/index.js',
         'user-center-update': './src/page/user-center-update/index.js',
         'result'            : './src/page/result/index.js',
-        'about'            : './src/page/about/about.js'
+        'about'            : './src/page/about/index.js'
      },
      output: {
          /* 
@@ -87,7 +87,7 @@ var config = {
             /* 
             * 【改动】：图片文件的加载方式变化，并和字体文件分开处理
             */
-            // 图片的配置 gif|png|jpg|图片格式；woff|svg|eot|ttf|字体样式
+            // 图片的配置 gif|png|jpg|图片格式；
            { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, 
              use: [
                   {
@@ -103,7 +103,7 @@ var config = {
              ]
            },
            /* 
-            * 【改动】：字体文件的加载方式变化
+            * 【改动】：字体文件的加载方式变化 woff|svg|eot|ttf|字体样式
             */
             // 字体图标的配置
             {

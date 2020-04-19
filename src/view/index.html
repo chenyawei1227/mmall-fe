@@ -3,17 +3,82 @@
 	<head>
         <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<%= require('html-loader!./layout/head-common.html')  %>
-		<title>MMALL电商平台</title>
+		<title><%= htmlWebpackPlugin.options.title%> - MMALL电商平台</title>
 	</head>
     <body>
         <%= require('html-loader!./layout/nav.html') %>
         <%= require('html-loader!./layout/header.html') %>
-        <div class="page-wrap w">
-        	<%= require('html-loader!./layout/nav-side.html') %>
-            <div class="content with-nav">test</div>
-            
+        <div class="w">
+            <ul class="keywords-list">
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=手机">手机</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=数码">数码</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=手机">电脑</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=手机">办公</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=家居">家居</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=家具">家具</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=家装">家装</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=厨具">厨具</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=男装">男装</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=女装">女装</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=童装">童装</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=内衣">内衣</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=厨卫家电">美妆</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=个人护理">个人护理</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=宠物">宠物</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=女鞋">女鞋</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=箱包">箱包</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=钟表">钟表</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=珠宝">珠宝</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=男鞋">男鞋</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=运动">运动</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=户外">户外</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=厨卫家电">房产</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=汽车">汽车</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=汽车用品">汽车用品</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=母婴">母婴</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=玩具乐器">玩具乐器</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" herf="./list.html?keyword=食品">食品</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=酒类">酒类</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=生鲜">生鲜</a>
+                    <a class="link" target="_blank" herf="./list.html?keyword=特产">特产</a>
+                </li>
+            </ul>
+            <div class="banner-con">
+                <div class="loading"></div>
+            </div>
+            <div class="w">
+                <div class="floor-wrap">
+                    <h1 class="floor-title">F1 家用电器</h1>
+                    <ul class="floor-list">
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=">
+                                <span class="floor-text">双开门冰箱</span>
+                                <img class="floor-img" src="<%= require('../image/floor/floor1-1.jpg') %>" alt="双开门冰箱" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
         <%= require('html-loader!./layout/footer.html') %>
     </body>
 </html>
