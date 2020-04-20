@@ -2,7 +2,7 @@
 * @Author: chenyawei1227
 * @Date:   2017-08-04 15:13:00
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-18 20:27:09
+ * @Last Modified time: 2020-04-20 20:05:52
 */
 
 'use strict';
@@ -14,7 +14,7 @@ var nav = {
 	init : function(){
 		this.bindEvent();
 		this.loadUserInfo();
-		//this.loadCartCount();
+		this.loadCartCount();
 		return this;
 	},
 	bindEvent : function(){
@@ -47,10 +47,10 @@ var nav = {
     },
 	//加载购物车数量
 	loadCartCount : function(){
-		_cart.getCartCount(function(){
-			$('.nav .cart-count').text(res || 0);
+		_cart.getCartCount(function(res){
+			$('.nav .cart-cont').text(res || 0);
 		}, function(errMsg){
-			$('.nav .cart-count').text(0);
+			$('.nav .cart-cont').text(0);
 		});
 	}
 };

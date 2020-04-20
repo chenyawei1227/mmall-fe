@@ -4,7 +4,7 @@
   "description": "mmall前端代码",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server",
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --devtool source-map --hot --inline",
     "dev_win": "./node_modules/.bin/webpack-dev-server",
     "dist": "WEBPACK_ENV=online ./node_modules/.bin/webpack -p",
     "dist_win": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p"
@@ -20,11 +20,13 @@
   },
   "homepage": "https://github.com/chenyawei1227/mmall-fe#readme",
   "devDependencies": {
-    "css-loader": "^3.5.2",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^6.0.0",
+    "file-loader": "^4.0.0",
     "html-loader": "^0.5.5",
-    "style-loader": "^1.1.4"
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
@@ -32,7 +34,6 @@
     "html-webpack-plugin": "^4.2.0",
     "install": "^0.13.0",
     "jquery": "^3.5.0",
-    "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"

@@ -2,17 +2,21 @@
 * @Author: chenyawei1227
 * @Date:   2018-01-27 14:18:25
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-18 19:26:17
+ * @Last Modified time: 2020-04-20 13:14:03
 */
-'sue strict';
+'use strict';
 require('./index.css');
 require('page/common/nav-simple/index.js');
 var _mm = require('util/mm.js');
-var $ = require('node_modules/jquery/dist/jquery.min.js');
 
 $(function(){
     var type        = _mm.getUrlParam('type') || 'default',
-    $element       = $('.' + type + '-success');
-    //显示对应的提示
+        $element    = $('.' + type + '-success');
+    if(type === 'payment'){
+        var orderNumber  = _mm.getUrlParam('orderNumber'),
+            $orderNumber = $element.find('.order-number');
+        $orderNumber.attr('href', $orderNumber.attr('href') + orderNumber);
+    }
+    // 显示对应的提示元素
     $element.show();
-});
+})
