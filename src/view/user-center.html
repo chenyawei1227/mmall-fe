@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - MMALL</title>
+    </head>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html') %>
+        <%= require('html-loader!./layout/header.html') %>
+        <div class="crumb">
+            <div class="w">
+                <div class="curmb-con">
+                    <a class="link" href="./index.html">MMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <%= require('html-loader!./layout/nav-side.html') %>
+            <div class="content with-nav">
+                <div class="panel">
+                    <div class="panel-title">个人中心</div>
+                    <div class="panel-body">
+                        <div class="loading"></div>
+                        <!-- 
+                            js通过hogan渲染html
+                            userHtml = _mm.renderHtml(templateIndex,res);
+                            $('.panel-body').html(userHtml); 
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%= require('html-loader!./layout/footer.html') %>
+    </body>
+</html>

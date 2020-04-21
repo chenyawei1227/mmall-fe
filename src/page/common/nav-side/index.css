@@ -1,0 +1,33 @@
+/*
+* @Author: chenyawei1227
+* @Date:   2017-08-05 10:39:20
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 17:12:27
+*/
+
+/* 导航主体 */
+.nav-side{
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+
+.nav-side .nav-item{
+	line-height: 25px;
+	font-size: 13px;
+}
+
+.nav-side .nav-item .link{
+    color: #888;
+}
+
+.nav-side .nav-item.active .link{
+	color: #c60023;
+}
+
+
+/* 右侧内容区 */
+.content.with-nav{
+	float: left;
+	width: 950px;
+}

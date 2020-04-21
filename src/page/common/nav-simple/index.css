@@ -1,0 +1,18 @@
+/*
+* @Author: chenyawei1227
+* @Date:   2017-08-04 12:46:47
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-18 13:49:46
+*/
+.nav-simple{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.nav-simple .logo{
+	font-size: 26px;
+	font-weight: bold;
+	color: #c60023;
+	text-decoration: none;
+}

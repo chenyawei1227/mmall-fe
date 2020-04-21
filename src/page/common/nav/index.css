@@ -1,0 +1,30 @@
+/*
+* @Author: chenyawei1227
+* @Date:   2017-08-04 15:12:54
+* @Last Modified by:   chenyawei1227
+* @Last Modified time: 2017-08-04 15:34:32
+*/
+.nav{
+	background: #eee;
+	height: 30px;
+	line-height: 30px;
+}
+/* 用户部分 */
+.nav .user{
+	float: left;
+}
+.nav .user.login{
+	display: none;
+}
+.nav .user .link{
+	margin-right: 5px;
+}
+
+/* 导航链接部分 */
+.nav .nav-list{
+	float: right;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-left: 5px;
+}

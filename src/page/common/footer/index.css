@@ -1,0 +1,22 @@
+/*
+* @Author: chenyawei1227
+* @Date:   2017-08-04 16:46:34
+ * @Last Modified by: chenyawei
+ * @Last Modified time: 2020-04-19 12:11:31
+*/
+.footer{
+	padding-bottom: 10px;
+}
+.links{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.footer .links .link{
+	padding: 0 10px;
+}
+.copyright{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}

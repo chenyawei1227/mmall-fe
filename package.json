@@ -1,0 +1,44 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall前端代码",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --devtool source-map --hot --inline",
+    "dev_win": "./node_modules/.bin/webpack-dev-server",
+    "dist": "WEBPACK_ENV=online ./node_modules/.bin/webpack -p",
+    "dist_win": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyawei1227/mmall-fe.git"
+  },
+  "author": "chenyawei1227",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenyawei1227/mmall-fe/issues"
+  },
+  "homepage": "https://github.com/chenyawei1227/mmall-fe#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan.js": "^3.0.2",
+    "html-webpack-plugin": "^4.2.0",
+    "install": "^0.13.0",
+    "jquery": "^3.5.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "keywords": [
+    "前端代码"
+  ]
+}
