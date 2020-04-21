@@ -2,7 +2,7 @@
 * @Author: Rosen
 * @Date:   2017-06-07 21:25:20
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-19 23:54:42
+ * @Last Modified time: 2020-04-21 11:21:21
 */
 
 'use strict';
@@ -64,7 +64,7 @@ var addressModal = {
         this.$modalWrap.find('.modal-container').click(function(e){
             e.stopPropagation();
         });
-        // 点击叉号或者蒙版区域，关闭弹窗
+        // 点击叉号或者模版区域，关闭弹窗
         this.$modalWrap.find('.close').click(function(e){
             _this.hide();
         });

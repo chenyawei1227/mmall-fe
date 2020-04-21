@@ -2,7 +2,7 @@
  * @Author: chenyawei 
  * @Date: 2020-04-16 23:26:48 
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-20 19:51:59
+ * @Last Modified time: 2020-04-21 15:05:53
  */
 var webpack           = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");//css单独打包
@@ -55,7 +55,7 @@ var config = {
          /* 
         * 【改动】：删除path的配置，在webpack4中文件默认生成的位置就是/dist,
         *  而publicPath和filename特性的设置要保留
-        * path: __dirname+'/dist',
+        * path: __dirname+'/dist/',
         * publicPath :'/dist',
         */
         publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
@@ -137,6 +137,7 @@ var config = {
 
         ]
      },
+     //本地打包文件显示方式
      devtool: 'eval',
      //别名
      resolve : {
