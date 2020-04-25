@@ -2,7 +2,7 @@
  * @Author: chenyawei 
  * @Date: 2020-04-16 23:26:48 
  * @Last Modified by: chenyawei
- * @Last Modified time: 2020-04-24 19:41:21
+ * @Last Modified time: 2020-04-25 11:41:45
  */
 var webpack           = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");//css单独打包
@@ -58,7 +58,7 @@ var config = {
         * path: __dirname+'/dist/',
         * publicPath :'/dist',
         */
-        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.bytenote.com/mmall-fe/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.bytenote.cn/mmall-fe/dist/',
         filename: 'js/[name].js'
      },
      externals : {
