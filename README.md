@@ -1,2 +1,2 @@
 # mmall-fe
-happymmall
+mmall.bytenote.cn
